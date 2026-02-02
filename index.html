@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DamiManfredo | Portafolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="https://wa.me/542323350346" class="wpp-btn" target="_blank" rel="noopener">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span class="wpp-tooltip">¡Escribime ahora!</span>
+    </a>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="logo">Dami<span>Programa</span></a>
+            <div class="nav-links">
+                <a href="https://github.com/DamiMV" target="_blank"><i class="fa-brands fa-github"></i><span> Github</span></a>
+                <a href="https://www.linkedin.com/in/dami-manfredo-871935395/" target="_blank" class="nav-btn-alt"><i class="fa-brands fa-linkedin-in"></i><span> LinkedIn</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hola, soy <span class="highlight">Damian Manfredo</span></h1>
+                <p>Desarrollador con experiencia en diseño web y software. Me apasiona crear soluciones que unan la funcionalidad técnica con una experiencia de usuario impecable.</p>
+                <div class="hero-actions">
+                    <a href="#skills" class="btn-sec">Skills</a>
+                    <a href="#proyectos" class="btn-sec">Proyectos</a>
+                    <a href="#contacto" class="btn-pri">Contacto</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="imagenes/perfil.jpg" alt="Damian Manfredo">
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2 class="title">Mis Proyectos</h2>
+            <div class="grid-projects">
+                <article class="card">
+                    <img src="imagenes/geromumi.png" alt="Invitación Digital">
+                    <div class="card-body">
+                        <h3>Invitación Digital</h3>
+                        <a href="https://geroymumi.netlify.app/" target="_blank" class="card-link">Ver Proyecto</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="imagenes/burgerstation.webp" alt="BurgerStation">
+                    <div class="card-body">
+                        <h3>BurgerStation</h3>
+                        <a href="https://burgerstationmenu.netlify.app/" target="_blank" class="card-link">Ver Proyecto</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="imagenes/music.png" alt="ILanding para Banda">
+                    <div class="card-body">
+                        <h3>Landing para Banda</h3>
+                        <a href="https://musicdemox.netlify.app/" target="_blank" class="card-link">Ver Proyecto</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="imagenes/Sin título.png" alt="Psicóloga">
+                    <div class="card-body">
+                        <h3>Onepage Psicóloga</h3>
+                        <a href="https://luciarevellopsico.netlify.app/" target="_blank" class="card-link">Ver Proyecto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="title">Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-tag"><img src="imagenes/javascript-logo-png_seeklogo-330541.webp" alt=""> JavaScript</div>
+                <div class="skill-tag"><img src="imagenes/html-5.png" alt=""> HTML5</div>
+                <div class="skill-tag"><img src="imagenes/css-3.png" alt=""> CSS3</div>
+                <div class="skill-tag"><img src="imagenes/c-sharp.png" alt=""> C#</div>
+                <div class="skill-tag"><img src="imagenes/mysql.png" alt=""> MySQL</div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h1>Contacto</h1>
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2>¿Trabajamos juntos?</h2>
+                    <p>Enviame un mensaje y hablemos sobre tu próximo proyecto.</p>
+                </div>
+                <form id="contactForm" action="https://formsubmit.co/damidev25@gmail.com" method="POST" class="form">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                
+                    <button type="submit" class="btn-pri">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Gracias por contactarme, te responderé muy pronto.</p>
+            <button onclick="closeModal()" class="btn-pri">Cerrar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Damidev. Seguime en:</p>
+        <div class="social-footer">
+            <a href="https://instagram.com/dami.programa"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/..."><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
